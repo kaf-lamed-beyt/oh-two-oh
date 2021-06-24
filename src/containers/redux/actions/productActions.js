@@ -1,10 +1,10 @@
-import { ActionTypes as action } from "../types/action-types";
+import { ActionTypes } from "../types/action-types";
 
 // action that sets the initial state of the products
 // or at leas renders the product list on the page/app
 export const setProducts = (products) => {
   return {
-    type: action.SET_PRODUCTS,
+    type: ActionTypes.SET_PRODUCTS,
     products,
   };
 };
@@ -12,7 +12,7 @@ export const setProducts = (products) => {
 // selectedProducts action
 export const selectedProducts = (products) => {
   return {
-    type: action.SELECTED_PRODUCT,
+    type: ActionTypes.SELECTED_PRODUCT,
     products,
   };
 };

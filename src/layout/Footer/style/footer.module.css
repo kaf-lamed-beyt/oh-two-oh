@@ -1,0 +1,6 @@
+.app_base {
+  height: 100%;
+  border: 1px solid red;
+  position: fixed;
+  width: 100%;
+}

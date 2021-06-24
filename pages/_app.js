@@ -1,9 +1,10 @@
 import React from "react";
 import "../styles/globals.css";
+import "../styles/variables.css";
 import Head from "next/head";
 import { isMobile } from "react-device-detect";
 import Message from "../src/utils/Message";
-import Provider from "redux";
+import { Provider } from "react-redux";
 import store from "../src/containers/redux/store";
 
 const BrowserContent = ({ text }) => {
@@ -26,15 +27,15 @@ function MyApp({ Component, pageProps }) {
           crossorigin="anonymous"
         ></script>
       </Head>
-      <Provider store={store}>
-        <Message>
-          {isMobile ? (
+      {isMobile ? (
+        <Provider store={store}>
+          <Message>
             <Component {...pageProps} />
-          ) : (
-            <BrowserContent text="Kindly view this page on a mobile phone." />
-          )}
-        </Message>
-      </Provider>
+          </Message>
+        </Provider>
+      ) : (
+        <BrowserContent text="Kindly view this page on a mobile phone." />
+      )}
     </React.Fragment>
   );
 }

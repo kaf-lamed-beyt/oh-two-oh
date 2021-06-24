@@ -1,0 +1,39 @@
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .root {
+    height: 100%;
+    width: 100%;
+  }
+
+  .root .app_name {
+    padding: 7px 0;
+    padding: var(--app-padding);
+  }
+
+  .header_items {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--input-neutral);
+  }
+
+  .header_items div {
+    height: 24px;
+    border-right: 1px solid var(--input-neutral);
+    width: 100%;
+    margin: 8px 0 0 0;
+  }
+
+  .header_items div p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .header_items span {
+    background: var(--input-neutral);
+    padding: 2px 4px;
+    padding-top: 6px;
+    margin: 15px 5px 0 0 !important;
+    border-radius: 50%;
+    height: 30px;
+  }
+}
