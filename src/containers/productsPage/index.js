@@ -1,13 +1,17 @@
 import React from "react";
 import Layout from "../../layout";
-import { Search } from "../components/Input";
+import { SearchBox } from "../components/Input";
 import style from "./style/products-page.module.css";
+import Banner from "../components/Banner";
+import ProductCategories from "../components/categories";
 
 const ProductPage = () => {
   return (
     <Layout>
       <section className={style.products_root}>
-        <p>All products go here</p>
+        <SearchBox defaultText="Search merchbuy" />
+        <Banner />
+        <ProductCategories />
       </section>
     </Layout>
   );

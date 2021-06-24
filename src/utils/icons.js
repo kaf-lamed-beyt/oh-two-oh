@@ -1,4 +1,3 @@
-import { AiOutlineMenu } from "react-icons/ai";
 import deals from "../../public/icons/deals.svg";
 import arrowDown from "../../public/icons/chevron-down-arrow.svg";
 import buy from "../../public/icons/buy.svg";

@@ -1,9 +1,13 @@
 :root {
   --primary: rgba(34, 126, 255, 1);
   --orange-lght: rgba(247, 186, 166, 1);
+  --orange-main: rgba(238, 111, 68, 1);
   --purple-lght: rgba(202, 179, 251, 1);
+  --purple-main: rgba(126, 66, 245, 1);
   --greeen-main: rgba(5, 148, 79, 1);
   --bg-primary: #fff;
   --input-neutral: rgba(237, 242, 247, 1);
+  --sub-text: rgba(113, 133, 150, 1);
+  --grey-color: rgba(111, 121, 139, 1);
   --app-padding: 5px 12px;
 }

@@ -36,4 +36,8 @@
     border-radius: 50%;
     height: 30px;
   }
+
+  .nobg {
+    margin: 0 0 0 12px;
+  }
 }
