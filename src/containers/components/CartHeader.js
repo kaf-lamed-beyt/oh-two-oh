@@ -6,8 +6,8 @@ const CartHeader = () => {
   return (
     <div className={style.header}>
       <div className={style.caret_right}>
-        <div>
-          <Link href="/product">
+        <Link href="/product">
+          <div>
             <svg
               width="18"
               height="18"
@@ -23,8 +23,8 @@ const CartHeader = () => {
                 strokeLinejoin="round"
               />
             </svg>
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
       <div className={`cart-title ${style.head_title}`}>
         <p>Cart</p>

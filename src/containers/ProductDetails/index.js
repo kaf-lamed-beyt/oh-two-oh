@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 import ProductFooter from "../components/productFooter";
 
 const ProductDetails = () => {
-  const product = useSelector((state) => state.allProducts.products);
+  const product = useSelector((state) => state.selectedProduct);
   console.log(product);
 
   const {
