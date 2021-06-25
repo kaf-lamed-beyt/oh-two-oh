@@ -7,7 +7,7 @@ const CartHeader = () => {
     <div className={style.header}>
       <div className={style.caret_right}>
         <div>
-          <Link href="/">
+          <Link href="/product">
             <svg
               width="18"
               height="18"

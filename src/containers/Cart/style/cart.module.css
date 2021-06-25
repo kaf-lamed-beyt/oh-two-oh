@@ -2,4 +2,5 @@
   background: var(--body);
   min-height: 80vh;
   padding: var(--app-padding);
+  padding-top: 19%;
 }

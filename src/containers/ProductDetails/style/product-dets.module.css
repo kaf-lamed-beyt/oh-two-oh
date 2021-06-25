@@ -1,6 +1,7 @@
 .prod_details {
   background: var(--body);
   min-height: 89vh;
+  padding-top: 15%;
 }
 
 .image_container {

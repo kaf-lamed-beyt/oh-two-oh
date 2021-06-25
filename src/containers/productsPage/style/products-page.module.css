@@ -1,6 +1,7 @@
 .products_root {
   min-height: 80vh;
   padding: var(--app-padding);
+  padding-top: 2%;
 }
 
 .products_section {
