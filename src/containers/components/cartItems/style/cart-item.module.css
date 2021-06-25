@@ -5,6 +5,7 @@
   flex-direction: column;
   padding: 15px 18px;
   margin: 0 0 10px 0;
+  margin: var(--app-padding);
 }
 
 .sect_one {
@@ -39,7 +40,7 @@
 
 .sect_two {
   display: flex;
-  border-top: 1px solid var(--grey-color);
+  border-top: 1px solid var(--input-neutral);
   justify-content: space-between;
   margin: 10px 0 0 0;
   padding: 10px 0 0 0;
@@ -50,7 +51,7 @@
 }
 
 .delete p {
-  margin: 0 0 0 5px;
+  margin: 3px 0 0 5px;
 }
 
 .cartItem_controllers {

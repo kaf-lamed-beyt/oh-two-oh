@@ -13,3 +13,17 @@ export const productReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+export const recentlyViewedProductReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ActionTypes.RECENTLY_VIEWED_PRODUCT:
+      return {
+        ...state,
+        payload: {
+          recentlyViewed: true,
+        },
+      };
+    default:
+      return state;
+  }
+};

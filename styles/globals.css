@@ -127,6 +127,7 @@ a {
   height: 55px;
   background: var(--primary);
   color: var(--bg-primary);
+  font-size: 14px;
 }
 
 .btn-outline-product {
@@ -136,6 +137,7 @@ a {
   color: var(--main-text);
   border: 2px solid var(--outline);
   margin: 0 0 0 26px;
+  font-size: 14px;
 }
 
 /* product component style */
@@ -173,4 +175,13 @@ a {
   margin-top: -1%;
   margin-left: -16%;
   text-align: center;
+}
+
+.cart-btn-primary {
+  height: 56px;
+  background: var(--primary);
+  width: 100%;
+  color: var(--bg-primary);
+  font-size: 16px;
+  margin: 13px 0 0 0;
 }

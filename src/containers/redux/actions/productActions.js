@@ -24,3 +24,10 @@ export const selectedProducts = (products) => {
 //     products,
 //   };
 // };
+
+export const recentlyViewedProducts = (products) => {
+  return {
+    type: ActionTypes.RECENTLY_VIEWED_PRODUCT,
+    products,
+  };
+};

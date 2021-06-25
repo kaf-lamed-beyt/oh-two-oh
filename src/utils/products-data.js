@@ -16,6 +16,7 @@ export const productsList = [
     location: "Lagos",
     stock: 5,
     isProductInCart: false,
+    recentlyViewed: false,
   },
   {
     id: "1234ads421egjdsc12",
@@ -27,6 +28,7 @@ export const productsList = [
     location: "Lagos",
     stock: 10,
     isProductInCart: false,
+    recentlyViewed: false,
   },
   {
     id: "1234ads421egjdsc13",
@@ -38,6 +40,7 @@ export const productsList = [
     location: "Lagos",
     stock: 3,
     isProductInCart: false,
+    recentlyViewed: false,
   },
   {
     id: "1234ads421egjdsc14",
@@ -49,6 +52,7 @@ export const productsList = [
     location: "Lagos",
     stock: 12,
     isProductInCart: false,
+    recentlyViewed: false,
   },
   {
     id: "1234ads421egjdsc15",
@@ -60,6 +64,7 @@ export const productsList = [
     location: "Lagos",
     stock: 5,
     isProductInCart: false,
+    recentlyViewed: false,
   },
   {
     id: "1234ads421egjdsc16",
@@ -71,5 +76,6 @@ export const productsList = [
     location: "Lagos",
     stock: 5,
     isProductInCart: false,
+    recentlyViewed: false,
   },
 ];

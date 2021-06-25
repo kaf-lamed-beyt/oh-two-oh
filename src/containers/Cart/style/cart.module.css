@@ -1,6 +1,23 @@
 .cart_area {
   background: var(--body);
   min-height: 80vh;
-  padding: var(--app-padding);
   padding-top: 19%;
+}
+
+.checkout {
+  background: var(--bg-primary);
+  padding: 15px 14px;
+  margin: 19px 0 0 0;
+}
+
+.subtotal,
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  font-size: 14px;
+}
+
+.total p:nth-child(2) {
+  font-weight: 700;
 }
