@@ -1,18 +1,8 @@
 import { ActionTypes } from "../types/action-types";
+import { productsList } from "../../../utils/products-data.js";
 
 const initialState = {
-  products: [
-    {
-      id: "1234ads421egjdsc",
-      name: "NIKE Huararche 2019",
-      description:
-        "Get comfy and comfortable with the new 2019 designer sneaker for all your events",
-      image: "some_image_link",
-      price: "₦45,000 - ₦90,000",
-      location: "Lagos",
-      stock: 5,
-    },
-  ],
+  products: productsList,
 };
 
 export const productReducer = (state = initialState, action) => {

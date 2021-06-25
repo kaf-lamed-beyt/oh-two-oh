@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
     <React.Fragment>
       <Head>
         <title>Trollbasket</title>
-        <link rel="icon" href="#" />
+        <link rel="icon" href="/icons/black-cart.svg" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

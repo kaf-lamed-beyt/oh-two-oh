@@ -1,11 +1,17 @@
 import React from "react";
+import Button from "./Buttons";
 
 const Banner = () => {
   return (
     <section className="root-banner">
-      <div className="blue-banner"></div>
-      <div className="banner-img"></div>
-      <div className="orange-banner"></div>
+      <div className="banner-img">
+        <p className="banner-text">
+          Having any <span className="orange-txt">issues</span> with your order?
+        </p>
+        <Button className="btn-primary-banner">
+          <p>Contact us</p>
+        </Button>
+      </div>
     </section>
   );
 };

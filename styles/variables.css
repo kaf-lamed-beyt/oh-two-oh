@@ -8,6 +8,10 @@
   --bg-primary: #fff;
   --input-neutral: rgba(237, 242, 247, 1);
   --sub-text: rgba(113, 133, 150, 1);
+  --main-text: rgba(7, 24, 39, 1);
   --grey-color: rgba(111, 121, 139, 1);
   --app-padding: 5px 12px;
+  --body: #e5e5e5;
+  --gold-star: rgba(255, 202, 66, 1);
+  --outline: rgba(160, 177, 192, 1);
 }

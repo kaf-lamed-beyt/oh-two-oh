@@ -1,0 +1,7 @@
+.root {
+  background: var(--bg-primary);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+}

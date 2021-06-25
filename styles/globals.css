@@ -56,7 +56,6 @@ a {
 .root-banner {
   margin: 17px 0 0 0;
   height: 142px;
-  border: 1px solid red;
   overflow: auto;
   overflow-x: hidden;
   display: flex;
@@ -70,6 +69,21 @@ a {
   background-position: center;
   background-size: cover;
   border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 22px;
+}
+
+.banner-text {
+  font-size: 13px;
+  font-weight: bold;
+  width: 158px;
+  height: 38px;
+  color: var(--bg-primary);
+}
+
+.orange-txt {
+  color: var(--orange-main);
 }
 
 .blue-banner {
@@ -85,4 +99,71 @@ a {
   height: 139px;
   border-radius: 4px;
   background: var(--orange-main);
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary-cart {
+  height: 45px;
+}
+
+.btn-primary-banner {
+  height: 31px;
+  width: 91px;
+  background: var(--primary);
+  color: var(--bg-primary);
+}
+
+.btn-primary-product {
+  width: 50%;
+  height: 55px;
+  background: var(--primary);
+  color: var(--bg-primary);
+}
+
+.btn-outline-product {
+  width: 50%;
+  height: 55px;
+  background: none;
+  color: var(--main-text);
+  border: 2px solid var(--outline);
+  margin: 0 0 0 26px;
+}
+
+/* product component style */
+.prod-card {
+  width: 108px;
+  height: 100%;
+  padding: 0 0 12px 0;
+}
+
+.prod-card img {
+  border-radius: 4px;
+}
+
+.product-name {
+  color: var(--sub-text);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+.product-price {
+  color: var(--main-text);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.product-qty {
+  color: #56636d;
+  font-size: 10px;
 }

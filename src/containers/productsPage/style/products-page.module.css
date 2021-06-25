@@ -2,3 +2,10 @@
   min-height: 80vh;
   padding: var(--app-padding);
 }
+
+.products_section {
+  margin: 13px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
