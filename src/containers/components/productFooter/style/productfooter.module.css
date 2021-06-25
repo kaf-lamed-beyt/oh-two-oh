@@ -1,6 +1,6 @@
 .root {
   background: var(--bg-primary);
-  height: 80px;
+  height: 75px;
   display: flex;
   justify-content: space-between;
   padding: 10px 14px;
