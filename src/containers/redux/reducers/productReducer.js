@@ -40,6 +40,7 @@ export const addProductToCartReducer = (state = initialState, action) => {
                 isProductInCart: true,
               }
             : product;
+          console.log(products);
         }),
       };
     default:
