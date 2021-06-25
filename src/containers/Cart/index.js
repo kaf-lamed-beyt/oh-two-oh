@@ -3,8 +3,32 @@ import CartHeader from "../components/CartHeader";
 import style from "./style/cart.module.css";
 import CartItem from "../components/cartItems";
 import Button from "../components/Buttons";
+import Image from "next/image";
+import { useSelector } from "react-redux";
 
 const Cart = () => {
+  const recentlyProducts = useSelector((state) => state.allProducts.products);
+
+  const recentProds = recentlyProducts.map((recent, id) => {
+    const {
+      name,
+      price,
+      stock,
+      image: { height, width, src },
+    } = recent;
+
+    return (
+      <div className="prod-card" key={id}>
+        <div className="product-image">
+          <Image src={src} height={height} width={width} alt={name} />
+        </div>
+        <p className="product-name">{name}</p>
+        <p className="product-price">{price}</p>
+        <p className="product-qty">MOQ {stock} (pieces) </p>
+      </div>
+    );
+  });
+
   return (
     <React.Fragment>
       <CartHeader />
@@ -26,14 +50,7 @@ const Cart = () => {
             <p>Recently viewed</p>
             <p>View all</p>
           </div>
-          <div className="prod-card" key={id}>
-            <div className="product-image">
-              <Image src={src} height={height} width={width} alt={name} />
-            </div>
-            <p className="product-name">{name}</p>
-            <p className="product-price">{price}</p>
-            <p className="product-qty">MOQ {stock} (pieces) </p>
-          </div>
+          <div className={style.recent}>recent products</div>
         </section>
       </section>
     </React.Fragment>
