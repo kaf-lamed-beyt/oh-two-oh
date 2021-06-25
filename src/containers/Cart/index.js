@@ -14,13 +14,20 @@ const Cart = () => {
       name,
       price,
       stock,
-      image: { height, width, src },
+      image: { height, width, src, blurDataURL },
     } = recent;
 
     return (
       <div className="prod-card" key={id}>
         <div className="product-image">
-          <Image src={src} height={height} width={width} alt={name} />
+          <Image
+            src={src}
+            height={height}
+            width={width}
+            placeholder="blur"
+            blurDataURL={blurDataURL}
+            alt={name}
+          />
         </div>
         <p className="product-name">{name}</p>
         <p className="product-price">{price}</p>

@@ -15,7 +15,7 @@ const ProductDetails = () => {
   const {
     name,
     description,
-    // image: { height, width, src },
+    image: { height, width, src, blurDataURL },
     price,
   } = product;
 
