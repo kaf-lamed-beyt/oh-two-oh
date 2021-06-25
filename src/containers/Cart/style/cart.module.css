@@ -1,0 +1,5 @@
+.cart_area {
+  background: var(--body);
+  min-height: 80vh;
+  padding: var(--app-padding);
+}

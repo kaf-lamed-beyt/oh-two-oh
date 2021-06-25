@@ -167,3 +167,10 @@ a {
   color: #56636d;
   font-size: 10px;
 }
+
+/* cart header component style */
+.cart-title p {
+  margin-top: -1%;
+  margin-left: -16%;
+  text-align: center;
+}
