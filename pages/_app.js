@@ -21,10 +21,10 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <meta name="theme-color" content="rgba(28, 90, 83, 1)" />
+        <meta name="theme-color" content="rgba(34, 126, 255, 1)" />
         <script
           src="https://kit.fontawesome.com/6f42b1cf6f.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
       </Head>
       {isMobile ? (
