@@ -10,8 +10,12 @@ import ProductFooter from "../components/productFooter";
 import { selectedProducts } from "../redux/actions/productActions";
 
 const ProductDetails = () => {
-  const selectedProduct = useSelector((state) => state.selectedProduct);
+  const selectedProduct = useSelector(
+    (state) => state.selectedProduct.products
+  );
   const dispatch = useDispatch();
+
+  console.log(selectedProduct);
 
   const { id } = selectedProduct;
 
