@@ -5,34 +5,52 @@ import Image from "next/image";
 import nikes from "../../../public/img/big-nike.png";
 import FiveStars from "../components/FiveStars";
 import user from "../../../public/img/user.png";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import ProductFooter from "../components/productFooter";
+import { selectedProducts } from "../redux/actions/productActions";
 
 const ProductDetails = () => {
-  const product = useSelector((state) => state.selectedProduct);
+  const selectedProduct = useSelector((state) => state.selectedProduct);
+  const dispatch = useDispatch();
+
+  const { id } = selectedProduct;
+
+  const getSelectedProduct = () => {
+    if (id && id !== "") {
+      dispatch(selectedProducts(selectedProduct.id));
+    }
+  };
+
+  React.useEffect(() => {
+    getSelectedProduct();
+  }, [id]);
 
   const {
     name,
     description,
     image: { height, width, src, blurDataURL },
     price,
-  } = product;
+  } = selectedProduct;
 
   return (
     <React.Fragment>
       <ProductHeader />
       <section className={style.prod_details}>
         <div className={style.image_container}>
-          <Image src={nikes} alt="product" />
+          <Image
+            src={src}
+            alt="product"
+            height={height}
+            width={width}
+            placeholder="blur"
+            blurDataURL={blurDataURL}
+          />
         </div>
         <div className={style.product_info}>
-          <p className={style.product_name}>NIKE Huararche 2019</p>
-          <p className={style.description}>
-            Get comfy and comfortable with the new 2019 designer sneaker for all
-            your events{" "}
-          </p>
+          <p className={style.product_name}>{name}</p>
+          <p className={style.description}>{description}</p>
           <p className={style.product_price}>
-            N45,000 - N80,000 <span>/Piece</span>
+            {price} <span>/Piece</span>
           </p>
         </div>
         <div className={style.product_description}>
