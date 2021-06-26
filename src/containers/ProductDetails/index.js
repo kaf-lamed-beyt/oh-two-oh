@@ -13,17 +13,15 @@ const ProductDetails = () => {
   const selectedProduct = useSelector((state) => state.allProducts.products);
   const dispatch = useDispatch();
 
-  console.log(name);
-
   const getSelectedProduct = () => {
-    if (id && id !== "") {
-      dispatch(selectedProducts(selectedProduct.id));
+    if (selectedProduct.id && selectedProduct.id !== "") {
+      dispatch(selectedProducts(selectedProduct));
     }
   };
 
   React.useEffect(() => {
     getSelectedProduct();
-  }, [id]);
+  }, []);
 
   return (
     <React.Fragment>
