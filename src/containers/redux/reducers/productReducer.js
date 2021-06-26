@@ -20,7 +20,7 @@ export const selectedProductReducer = (state = initialState, action) => {
     case types.SELECTED_PRODUCT:
       return {
         ...state,
-        ...payload,
+        ...products,
       };
     default:
       return state;
@@ -61,6 +61,7 @@ export const removeProductFromCartReducer = (state = initialState, action) => {
                 isProductInCart: false,
               }
             : product;
+          console.log(product.id);
         }),
       };
     default:
@@ -74,7 +75,7 @@ export const increaseProdQtyReducer = (state = initialState, action) => {
     case types.INCREASE_PRODUCT_QUANTITY:
       return {
         ...state,
-        products: products.state.map((product) => {
+        products: state.products.map((product) => {
           product.id == action.id
             ? {
                 ...product,
@@ -94,7 +95,7 @@ export const reduceProdQtyReducer = (state = initialState, action) => {
     case types.REDUCE_PRODUCT_QUANTITY:
       return {
         ...state,
-        products: products.state.map((product) => {
+        products: state.products.map((product) => {
           product.id === action.id
             ? {
                 ...product,
@@ -117,7 +118,7 @@ export const recentlyViewedProductReducer = (state = initialState, action) => {
     case types.RECENTLY_VIEWED_PRODUCT:
       return {
         ...state,
-        payload: {
+        products: {
           recentlyViewed: true,
         },
       };

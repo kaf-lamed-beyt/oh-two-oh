@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 const Product = () => {
   const products = useSelector((state) => state.allProducts.products);
-  console.log(products);
 
   const mappedProducts = products.map((product, id) => {
     const {

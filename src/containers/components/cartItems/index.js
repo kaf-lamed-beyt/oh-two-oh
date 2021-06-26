@@ -10,7 +10,6 @@ import {
 
 const CartItem = () => {
   const cartItems = useSelector((state) => state.productsInCart.products);
-  console.log(cartItems);
 
   const dispatch = useDispatch();
 

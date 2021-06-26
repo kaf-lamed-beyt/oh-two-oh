@@ -10,7 +10,6 @@ import ProductFooter from "../components/productFooter";
 
 const ProductDetails = () => {
   const product = useSelector((state) => state.selectedProduct);
-  console.log(product);
 
   const {
     name,
