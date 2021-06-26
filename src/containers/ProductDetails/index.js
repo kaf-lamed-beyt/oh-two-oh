@@ -10,14 +10,10 @@ import ProductFooter from "../components/productFooter";
 import { selectedProducts } from "../redux/actions/productActions";
 
 const ProductDetails = () => {
-  const selectedProduct = useSelector(
-    (state) => state.selectedProduct.products
-  );
+  const selectedProduct = useSelector((state) => state.allProducts.products);
   const dispatch = useDispatch();
 
-  console.log(selectedProduct);
-
-  const { id } = selectedProduct;
+  console.log(name);
 
   const getSelectedProduct = () => {
     if (id && id !== "") {
@@ -29,32 +25,21 @@ const ProductDetails = () => {
     getSelectedProduct();
   }, [id]);
 
-  const {
-    name,
-    description,
-    image: { height, width, src, blurDataURL },
-    price,
-  } = selectedProduct;
-
   return (
     <React.Fragment>
       <ProductHeader />
       <section className={style.prod_details}>
         <div className={style.image_container}>
-          <Image
-            src={src}
-            alt="product"
-            height={height}
-            width={width}
-            placeholder="blur"
-            blurDataURL={blurDataURL}
-          />
+          <Image src={nikes} alt="product" placeholder="blur" />
         </div>
         <div className={style.product_info}>
-          <p className={style.product_name}>{name}</p>
-          <p className={style.description}>{description}</p>
+          <p className={style.product_name}>NIKE Huararche 2019</p>
+          <p className={style.description}>
+            Get comfy and comfortable with the new 2019 designer sneaker for all
+            your events
+          </p>
           <p className={style.product_price}>
-            {price} <span>/Piece</span>
+            ₦900 - ₦1,500<span>/Piece</span>
           </p>
         </div>
         <div className={style.product_description}>
